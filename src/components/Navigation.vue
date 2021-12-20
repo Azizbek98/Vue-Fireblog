@@ -15,7 +15,7 @@
     </nav>
     <menuIcon class="menu-icon" />
     <transition>
-      <ul>
+      <ul class="mobile-nav">
         <router-link class="link" to="#">Home</router-link>
         <router-link class="link" to="#">Blogs</router-link>
         <router-link class="link" to="#">Create Post</router-link>
@@ -98,6 +98,28 @@ header {
     top: 32px;
     right: 25px;
     cursor: pointer;
+  }
+
+  .mobile-nav {
+    padding: 20px;
+    width: 70%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background-color: #303030;
+    top: 0;
+    left: 0;
+
+    .link {
+      padding: 15px 0;
+      color: #fff;
+
+      &:hover {
+        color: #1eb8b8;
+      }
+    }
   }
 }
 </style>
