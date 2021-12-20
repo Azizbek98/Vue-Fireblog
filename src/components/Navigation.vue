@@ -4,8 +4,8 @@
       <div class="branding">
         <router-link class="logo" :to="{ name: 'Home' }">FireBlogs</router-link>
       </div>
-      <div class="nav-links">
-        <ul v-show="!mobileNav">
+      <div class="nav-links" v-show="!mobile">
+        <ul>
           <router-link class="link" to="#">Home</router-link>
           <router-link class="link" to="#">Blogs</router-link>
           <router-link class="link" to="#">Create Post</router-link>
@@ -14,7 +14,7 @@
       </div>
     </nav>
     <menuIcon @click="toggleMobileNav" v-show="mobile" class="menu-icon" />
-    <transition>
+    <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
         <router-link class="link" to="#">Home</router-link>
         <router-link class="link" to="#">Blogs</router-link>
@@ -151,6 +151,24 @@ header {
         color: #1eb8b8;
       }
     }
+  }
+
+  // Special classes of transitions in vuejs
+  .mobile-nav-enter-active,
+  .mobile-nav-leave-active {
+    transition: all 1s ease;
+  }
+
+  .mobile-nav-enter {
+    transform: translateX(-250px);
+  }
+
+  .mobile-nav-enter-to {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-leave-to {
+    transform: translateX(-250px);
   }
 }
 </style>
