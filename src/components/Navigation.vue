@@ -2,6 +2,9 @@
   <header>
     <nav class="container">
       <div class="branding">
+        <router-link :to="{ name: 'Home' }"
+          ><logoIcon class="logo-icon"
+        /></router-link>
         <router-link class="logo" :to="{ name: 'Home' }">FireBlogs</router-link>
       </div>
       <div class="nav-links" v-show="!mobile">
@@ -27,11 +30,13 @@
 
 <script>
 import menuIcon from "../assets/Icons/bars-regular.svg";
+import logoIcon from "../assets/firebase.svg";
 
 export default {
   name: "Navigation",
   components: {
     menuIcon,
+    logoIcon,
   },
   // Data function for returning models
   data() {
@@ -98,6 +103,12 @@ header {
         font-size: 24px;
         color: #000;
         text-decoration: none;
+      }
+
+      .logo-icon {
+        height: 35px;
+        width: 28px;
+        padding-right: 5px;
       }
     }
 
