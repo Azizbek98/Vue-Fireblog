@@ -13,7 +13,7 @@
         </ul>
       </div>
     </nav>
-    <menuIcon />
+    <menuIcon class="menu-icon" />
     <transition>
       <ul>
         <router-link class="link" to="#">Home</router-link>
@@ -69,6 +69,35 @@ header {
         text-decoration: none;
       }
     }
+
+    .nav-links {
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+
+      ul {
+        margin-right: 32px;
+
+        .link {
+          margin-right: 32px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    position: absolute;
+    height: 25px;
+    width: auto;
+    top: 32px;
+    right: 25px;
+    cursor: pointer;
   }
 }
 </style>
