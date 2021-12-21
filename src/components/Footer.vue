@@ -50,20 +50,20 @@
 </template>
 
 <script>
-import logoIcon from "../assets/firebase.svg";
 import youtube from "../assets/Icons/youtube-brands.svg";
 import twitter from "../assets/Icons/twitter-brands.svg";
 import instagram from "../assets/Icons/instagram-brands.svg";
 import linkedin from "../assets/Icons/linkedin-brands.svg";
+import logoIcon from "../assets/firebase.svg";
 
 export default {
   name: "Footer",
   components: {
-    logoIcon,
     youtube,
     twitter,
     instagram,
     linkedin,
+    logoIcon,
   },
 };
 </script>
@@ -106,6 +106,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        text-align: center;
 
         .logo {
           font-size: 30px;

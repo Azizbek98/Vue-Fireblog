@@ -153,6 +153,8 @@ header {
     background-color: #303030;
     top: 0;
     left: 0;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
     .link {
       padding: 15px 0;
