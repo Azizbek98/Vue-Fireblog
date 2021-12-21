@@ -145,6 +145,42 @@ footer {
           }
         }
       }
+
+      .col-2 {
+        ul {
+          height: 100%;
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          @media (min-width: 800px) {
+            flex-direction: column;
+          }
+
+          .link {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .right {
+      gap: 32px;
+      color: #fff;
+      align-items: center;
+      flex-direction: column;
+
+      @media (min-width: 800px) {
+        align-items: flex-end;
+        gap: 0;
+      }
+    }
+
+    p {
+      margin-top: auto;
     }
   }
 }
