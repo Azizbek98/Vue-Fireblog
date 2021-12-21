@@ -118,6 +118,33 @@ footer {
           gap: 0;
         }
       }
+
+      .col-1 {
+        flex-direction: column;
+
+        h2 {
+          text-align: center;
+
+          @media (min-width: 800px) {
+            text-align: initial;
+          }
+
+          ul {
+            margin-top: auto;
+
+            li {
+              display: flex;
+              align-items: center;
+
+              .svg-icon {
+                width: 24px;
+                height: auto;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
