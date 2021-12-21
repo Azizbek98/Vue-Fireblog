@@ -3,25 +3,29 @@
     <div class="container">
       <div class="left">
         <div class="col-1">
-          <router-link :to="{ name: 'Home' }"
-            ><logoIcon class="logo-icon"
-          /></router-link>
-          <router-link class="logo" :to="{ name: 'Home' }"
-            >FireBlogs</router-link
-          >
+          <div class="brand-logo">
+            <router-link :to="{ name: 'Home' }"
+              ><logoIcon class="logo-icon"
+            /></router-link>
+            <router-link class="logo" :to="{ name: 'Home' }"
+              >FireBlogs</router-link
+            >
+          </div>
           <!-- Socials -->
-          <li>
-            <a href="#"><youtube class="svg-icon" /></a>
-          </li>
-          <li>
-            <a href="#"><twitter class="svg-icon" /></a>
-          </li>
-          <li>
-            <a href="#"><instagram class="svg-icon" /></a>
-          </li>
-          <li>
-            <a href="#"><linkedin class="svg-icon" /></a>
-          </li>
+          <ul>
+            <li>
+              <a href="#"><youtube class="svg-icon" /></a>
+            </li>
+            <li>
+              <a href="#"><twitter class="svg-icon" /></a>
+            </li>
+            <li>
+              <a href="#"><instagram class="svg-icon" /></a>
+            </li>
+            <li>
+              <a href="#"><linkedin class="svg-icon" /></a>
+            </li>
+          </ul>
         </div>
         <div class="col-2">
           <ul>
@@ -46,6 +50,7 @@
 </template>
 
 <script>
+import logoIcon from "../assets/firebase.svg";
 import youtube from "../assets/Icons/youtube-brands.svg";
 import twitter from "../assets/Icons/twitter-brands.svg";
 import instagram from "../assets/Icons/instagram-brands.svg";
@@ -54,6 +59,7 @@ import linkedin from "../assets/Icons/linkedin-brands.svg";
 export default {
   name: "Footer",
   components: {
+    logoIcon,
     youtube,
     twitter,
     instagram,
@@ -96,11 +102,23 @@ footer {
         gap: 0;
       }
 
-      .header {
-        font-size: 24px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
+      .brand-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logo {
+          font-size: 30px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 600;
+          margin-left: 10px;
+        }
+
+        .logo-icon {
+          width: 35px;
+          height: auto;
+        }
       }
 
       ul {
