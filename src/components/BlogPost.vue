@@ -1,7 +1,11 @@
-<template></template>
+<template>
+  <div>Blog post component</div>
+</template>
 
 <script>
-export default {};
+export default {
+  name: "BlogPost",
+};
 </script>
 
 <style></style>
