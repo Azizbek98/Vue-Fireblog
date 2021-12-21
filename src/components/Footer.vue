@@ -62,4 +62,45 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+  margin-top: auto;
+  padding: 100px 25px;
+  background-color: #303030;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+      gap: 0px;
+    }
+
+    > div {
+      display: flex;
+      flex: 1;
+    }
+
+    .left {
+      gap: 32px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: 800px) {
+        flex-direction: row;
+        align-items: initial;
+        gap: 0;
+      }
+
+      .header {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+}
+</style>
