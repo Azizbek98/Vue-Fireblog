@@ -99,6 +99,24 @@ footer {
       .header {
         font-size: 24px;
         color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      ul {
+        gap: 16px;
+        list-style: none;
+        display: flex;
+      }
+
+      .col-1,
+      .col-2 {
+        gap: 32px;
+        display: flex;
+        flex: 1;
+        @media (min-width: 800px) {
+          gap: 0;
+        }
       }
     }
   }
