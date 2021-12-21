@@ -33,10 +33,10 @@
             <router-link class="link" :to="{ name: 'Blogs' }"
               >Blogs</router-link
             >
-            <router-link v-if="user" class="link" :to="{ name: 'Newpost' }"
+            <router-link class="link" :to="{ name: 'Newpost' }"
               >Create Post</router-link
             >
-            <router-link v-if="!user" class="link" :to="{ name: 'Login' }"
+            <router-link class="link" :to="{ name: 'Login' }"
               >Login / Register</router-link
             >
           </ul>
@@ -109,7 +109,7 @@ footer {
         text-align: center;
 
         .logo {
-          font-size: 30px;
+          font-size: 35px;
           color: #fff;
           text-decoration: none;
           font-weight: 600;
@@ -126,6 +126,16 @@ footer {
         gap: 16px;
         list-style: none;
         display: flex;
+        .svg-icon {
+          margin-top: 15px;
+          width: 34px;
+          height: auto;
+          color: #fff;
+
+          &:hover {
+            color: #1eb8b8;
+          }
+        }
       }
 
       .col-1,
@@ -154,12 +164,6 @@ footer {
             li {
               display: flex;
               align-items: center;
-
-              .svg-icon {
-                width: 24px;
-                height: auto;
-                color: #fff;
-              }
             }
           }
         }
@@ -181,6 +185,10 @@ footer {
             font-weight: 500;
             color: #fff;
             text-decoration: none;
+
+            &:hover {
+              color: #1eb8b8;
+            }
           }
         }
       }
