@@ -1,10 +1,13 @@
 <template>
-  <div>Blog post component</div>
+  <div class="blog-wrapper">
+    <div class="blog-content"></div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "BlogPost",
+  props: ["post"],
 };
 </script>
 
