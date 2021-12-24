@@ -43,4 +43,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  @media (min-width: 800px) {
+  }
+}
+</style>
