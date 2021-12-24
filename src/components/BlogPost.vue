@@ -48,7 +48,16 @@ export default {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
+    min-height: 650px;
+    max-height: 650px;
+    flex-direction: row;
+  }
+
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 </style>
