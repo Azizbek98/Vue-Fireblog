@@ -47,7 +47,8 @@ export default {
 .blog-wrapper {
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
   @media (min-width: 700px) {
     min-height: 650px;
     max-height: 650px;
@@ -122,6 +123,27 @@ export default {
           border-bottom-color: #fff;
         }
       }
+    }
+  }
+
+  .blog-photo {
+    order: 1;
+    flex: 3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    @media (min-width: 700px) {
+      order: 2;
+    }
+
+    @media (min-width: 800px) {
+      flex: 4;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
