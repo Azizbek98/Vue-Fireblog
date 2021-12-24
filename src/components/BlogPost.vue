@@ -15,18 +15,18 @@
           View The Post <Arrow class="arrow" />
         </router-link>
       </div>
-      <div class="blog-photo">
-        <img
-          v-if="post.welcomeScreen"
-          :src="require(`../assets/blogPhotos/${post.photo}.jpg`)"
-          alt=""
-        />
-        <img
-          v-else
-          :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.jpg`)"
-          alt=""
-        />
-      </div>
+    </div>
+    <div class="blog-photo">
+      <img
+        v-if="post.welcomeScreen"
+        :src="require(`../assets/blogPhotos/${post.photo}.jpg`)"
+        alt=""
+      />
+      <img
+        v-else
+        :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.jpg`)"
+        alt=""
+      />
     </div>
   </div>
 </template>
@@ -58,6 +58,17 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex: 4;
+    order: 2;
+
+    @media (min-width: 700px) {
+      order: 1;
+    }
+
+    @media (min-width: 800px) {
+      flex: 3;
+    }
   }
 }
 </style>
