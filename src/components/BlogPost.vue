@@ -8,12 +8,24 @@
         <p v-if="post.welcomeScreen">{{ post.blogPost }}</p>
         <p class="content-preview" v-else>{{ post.blogHTML }}</p>
 
-        <router-link
-          class="link link-light"
+        <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
+          Login / Register <Arrow class="arrow arrow-light" />
+        </router-link>
+        <router-link class="link link-light" v-else to="#">
+          View The Post <Arrow class="arrow" />
+        </router-link>
+      </div>
+      <div class="blog-photo">
+        <img
           v-if="post.welcomeScreen"
-          to="#"
-        ></router-link>
-        <router-link v-else></router-link>
+          :src="require(`../assets/blogPhotos/${post.photo}.jpg`)"
+          alt=""
+        />
+        <img
+          v-else
+          :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.jpg`)"
+          alt=""
+        />
       </div>
     </div>
   </div>
