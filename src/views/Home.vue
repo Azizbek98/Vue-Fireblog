@@ -28,12 +28,12 @@ export default {
       },
       sampleBlogPost: [
         {
-          title: "This is a Filter Title !",
+          titlePost: "This is a Filter Title !",
           blogHTML: "This is blog post title",
           blogCoverPhoto: "beautiful-stories",
         },
         {
-          title: "This is a Filter Title !",
+          titlePost: "This is a Filter Title !",
           blogHTML: "This is blog post title",
           blogCoverPhoto: "beautiful-stories",
         },
