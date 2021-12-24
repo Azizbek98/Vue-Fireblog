@@ -69,6 +69,26 @@ export default {
     @media (min-width: 800px) {
       flex: 3;
     }
+
+    div {
+      max-width: 375px;
+      padding: 72px 24px;
+
+      @media (min-width: 700px) {
+        padding: 0 24px;
+      }
+
+      h2 {
+        font-size: 32px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+        @media (min-width: 700px) {
+          font-size: 40px;
+        }
+      }
+    }
   }
 }
 </style>
