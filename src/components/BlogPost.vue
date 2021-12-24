@@ -105,6 +105,22 @@ export default {
       }
 
       .link {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 32px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s ease-in all;
+
+        &:hover {
+          border-bottom-color: #303030;
+        }
+      }
+
+      .link-light {
+        &:hover {
+          border-bottom-color: #fff;
+        }
       }
     }
   }
