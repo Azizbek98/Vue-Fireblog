@@ -147,4 +147,14 @@ export default {
     }
   }
 }
+
+.blog-wrapper:nth-child(even) {
+  .blog-content {
+    order: 2;
+  }
+
+  .blog-photo {
+    order: 1;
+  }
+}
 </style>

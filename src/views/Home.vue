@@ -33,9 +33,9 @@ export default {
           blogCoverPhoto: "beautiful-stories",
         },
         {
-          titlePost: "This is a Filter Title !",
+          titlePost: "This is a Filter Title 2 !",
           blogHTML: "This is blog post title",
-          blogCoverPhoto: "beautiful-stories",
+          blogCoverPhoto: "designed-for-everyone",
         },
       ],
     };
