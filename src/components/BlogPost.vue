@@ -88,6 +88,24 @@ export default {
           font-size: 40px;
         }
       }
+
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.7;
+      }
+
+      .content-preview {
+        font-style: 13px;
+        min-height: 24px;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .link {
+      }
     }
   }
 }
