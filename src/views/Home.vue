@@ -6,16 +6,26 @@
       v-for="(post, index) in sampleBlogPost"
       :key="index"
     />
+    <div class="blog-card-wrap">
+      <div class="container">
+        <h3>View more recent blogs</h3>
+        <div class="blog-cards">
+          <BlogCard />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import BlogPost from "../components/BlogPost";
+import BlogCard from "../components/BlogCard";
 
 export default {
   name: "Home",
   components: {
     BlogPost,
+    BlogCard,
   },
   data() {
     return {
