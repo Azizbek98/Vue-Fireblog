@@ -10,7 +10,7 @@
       <div class="container">
         <h3>View more recent blogs</h3>
         <div class="blog-cards">
-          <BlogCard />
+          <BlogCard v-for="(post, index) in sampleBlogCards" :key="index" />
         </div>
       </div>
     </div>
@@ -74,3 +74,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.blog-card-wrap {
+  h3 {
+    font-weight: 300;
+    font-style: 28px;
+    margin-bottom: 32px;
+  }
+}
+</style>
