@@ -1,5 +1,14 @@
 <template>
-  <div></div>
+  <div class="blog-card">
+    <div class="icons">
+      <div class="icon">
+        <Edit class="icon" />
+      </div>
+      <div class="icon">
+        <Delete class="icon" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
