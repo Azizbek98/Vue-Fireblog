@@ -2,10 +2,10 @@
   <div class="blog-card">
     <div class="icons">
       <div class="icon">
-        <Edit class="icon" />
+        <Edit class="edit" />
       </div>
       <div class="icon">
-        <Delete class="icon" />
+        <Delete class="delete" />
       </div>
     </div>
     <img
@@ -73,6 +73,24 @@ export default {
 
       &:hover {
         background-color: #303030;
+
+        .edit,
+        .delete {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        margin-right: 8px;
+      }
+
+      .edit,
+      .delete {
+        pointer-events: none;
+        height: 15px;
+        width: auto;
       }
     }
   }
