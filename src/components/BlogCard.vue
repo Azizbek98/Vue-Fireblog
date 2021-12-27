@@ -119,9 +119,28 @@ export default {
     }
 
     h6 {
+      font-weight: 400;
+      font-style: 12px;
+      padding-bottom: 16px;
     }
 
     .link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: auto;
+      font-weight: 500;
+      padding-top: 20px;
+      font-style: 12px;
+      padding-bottom: 4px;
+      transition: 0.5s ease all;
+
+      &:hover {
+        color: rgba(48, 48, 48, 0.8);
+      }
+
+      .arrow {
+        width: 10px;
+      }
     }
   }
 }
