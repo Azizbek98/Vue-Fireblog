@@ -94,5 +94,35 @@ export default {
       }
     }
   }
+
+  img {
+    display: block;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 3;
+    padding: 32px 16px;
+    color: #000;
+
+    h4 {
+      padding-bottom: 8px;
+      font-style: 20px;
+      font-weight: 300;
+    }
+
+    h6 {
+    }
+
+    .link {
+    }
+  }
 }
 </style>
