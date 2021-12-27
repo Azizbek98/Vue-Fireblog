@@ -63,6 +63,17 @@ export default {
 
     .icon {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: 0.5s ease all;
+
+      &:hover {
+        background-color: #303030;
+      }
     }
   }
 }
