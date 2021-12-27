@@ -38,4 +38,32 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.blog-card {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  min-height: 420px;
+  transition: 0.5s ease all;
+
+  &:hover {
+    transform: rotateZ(-1deg) scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .icons {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+
+    .icon {
+      display: flex;
+    }
+  }
+}
+</style>
