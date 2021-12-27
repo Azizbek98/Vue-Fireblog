@@ -97,4 +97,18 @@ export default {
     margin-bottom: 32px;
   }
 }
+
+.updates {
+  .container {
+    padding: 100px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 800px) {
+      padding: 125px 25px;
+      flex-direction: row;
+    }
+  }
+}
 </style>
