@@ -109,6 +109,30 @@ export default {
       padding: 125px 25px;
       flex-direction: row;
     }
+
+    .router-button {
+      display: flex;
+      font-style: 14px;
+      text-decoration: none;
+
+      @media (min-width: 800px) {
+        margin-left: auto;
+      }
+    }
+
+    h2 {
+      font-weight: 300;
+      font-style: 32px;
+      max-width: 425px;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+
+      @media (min-width: 800px) {
+        text-align: initial;
+        font-style: 40px;
+      }
+    }
   }
 }
 </style>
