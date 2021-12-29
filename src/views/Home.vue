@@ -43,7 +43,6 @@ export default {
   },
   data() {
     return {
-      variable: true,
       welcomeScreen: {
         title: "Welcome !",
         blogPost:
