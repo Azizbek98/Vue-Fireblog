@@ -24,7 +24,7 @@
       />
       <img
         v-else
-        :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.png`)"
+        :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.jpg`)"
         alt=""
       />
     </div>
