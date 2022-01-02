@@ -33,14 +33,12 @@
 
 <script>
 import Arrow from "../assets/Icons/arrow-right-light.svg";
-import BlogPhoto from "../assets/blogPhotos/beautiful-stories.svg";
 
 export default {
   name: "BlogPost",
   props: ["post"],
   components: {
     Arrow,
-    BlogPhoto,
   },
 };
 </script>
