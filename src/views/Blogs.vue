@@ -22,7 +22,11 @@ export default {
   components: {
     BlogCard,
   },
-  computed: {},
+  computed: {
+    sampleBlogCards() {
+      return this.$store.state.sampleBlogCards;
+    },
+  },
 };
 </script>
 
