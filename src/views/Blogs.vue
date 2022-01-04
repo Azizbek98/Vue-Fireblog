@@ -22,6 +22,11 @@ export default {
   components: {
     BlogCard,
   },
+  data() {
+    return {
+      editPost: "",
+    };
+  },
   computed: {
     sampleBlogCards() {
       return this.$store.state.sampleBlogCards;
