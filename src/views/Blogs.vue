@@ -30,4 +30,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+input[type="checkbox"] {
+  position: relative;
+  border: none;
+  -webkit-appearance: none;
+  background: #fff;
+  outline: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+}
+</style>
