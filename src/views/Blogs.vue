@@ -54,6 +54,8 @@ export default {
 
     span {
       margin-right: 16px;
+      font-size: 18px;
+      font-weight: 600;
     }
 
     input[type="checkbox"] {
