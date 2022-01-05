@@ -36,6 +36,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.blog-cards {
+  position: relative;
+
+  .toggle-edit {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -70px;
+    right: 0;
+
+    span {
+      margin-right: 16px;
+    }
+  }
+}
+
 input[type="checkbox"] {
   cursor: pointer;
   position: relative;
