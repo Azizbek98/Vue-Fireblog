@@ -15,7 +15,7 @@
         </div>
         <div class="input">
           <input type="password" placeholder="Password" v-model="password" />
-          <Email class="icon" />
+          <Password class="icon" />
         </div>
       </div>
       <router-link class="forgot-password" :to="{ name: 'ForgotPassword' }">
@@ -49,4 +49,25 @@ export default {
 
 <style lang="scss">
 /* All styles for Login, Registration and ForgotPassword components will be here */
+.form-wrap {
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 900px) {
+    width: 100%;
+  }
+
+  .login-register {
+    margin-bottom: 32px;
+
+    .router-link {
+      color: #000;
+    }
+  }
+}
 </style>
