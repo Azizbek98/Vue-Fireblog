@@ -69,5 +69,24 @@ export default {
       color: #000;
     }
   }
+
+  form {
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    @media (min-width: 900px) {
+      padding: 0 50px;
+    }
+
+    h2 {
+      text-align: center;
+      font-style: 32px;
+    }
+  }
 }
 </style>
