@@ -19,8 +19,15 @@
 </template>
 
 <script>
+import Email from "../assets/Icons/envelope-regular.svg";
+import Password from "../assets/Icons/lock-alt-solid.svg";
+
 export default {
   name: "Login",
+  components: {
+    Email,
+    Password,
+  },
 };
 </script>
 
