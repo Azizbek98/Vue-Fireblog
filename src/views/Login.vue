@@ -22,7 +22,9 @@
         Forgot password
       </router-link>
       <button>Sign In</button>
+      <div class="angle"></div>
     </form>
+    <div class="background"></div>
   </div>
 </template>
 
@@ -35,6 +37,12 @@ export default {
   components: {
     Email,
     Password,
+  },
+  data() {
+    return {
+      email: null,
+      password: null,
+    };
   },
 };
 </script>
