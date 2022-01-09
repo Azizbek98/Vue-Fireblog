@@ -92,50 +92,49 @@ export default {
       @media (min-width: 900px) {
         font-size: 40px;
       }
+    }
+    .inputs {
+      width: 100%;
+      max-width: 350px;
 
-      .inputs {
-        width: 100%;
-        max-width: 350px;
+      .input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
 
-        .input {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 8px;
+        input {
+          width: 100%;
+          border: none;
+          background-color: #f2f7f6;
+          padding: 4px 4px 4px 34px;
+          height: 50px;
 
-          input {
-            width: 100%;
-            border: none;
-            background-color: #f2f7f6;
-            padding: 4px 4px 4px 30px;
-            height: 50px;
-
-            &:focus {
-              outline: none;
-            }
+          &:focus {
+            outline: none;
           }
+        }
 
-          .icon {
-            width: 12px;
-            position: absolute;
-            left: 6px;
-          }
+        .icon {
+          width: 12px;
+          position: absolute;
+          left: 12px;
         }
       }
+    }
 
-      .forgot-password {
-        text-decoration: none;
-        color: #000;
-        cursor: pointer;
-        font-style: 14px;
-        margin: 16px 0 32px;
-        border-bottom: 1px solid transparent;
-        transition: 0.5s ease all;
+    .forgot-password {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+      font-style: 14px;
+      margin: 16px 0 32px;
+      border-bottom: 1px solid transparent;
+      transition: 0.5s ease all;
 
-        &:hover {
-          border-color: #303030;
-        }
+      &:hover {
+        border-color: #303030;
       }
     }
   }
