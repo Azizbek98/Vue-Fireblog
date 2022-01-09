@@ -97,6 +97,14 @@ export default {
         text-decoration: none;
         color: #000;
         cursor: pointer;
+        font-style: 14px;
+        margin: 16px 0 32px;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s ease all;
+
+        &:hover {
+          border-color: #303030;
+        }
       }
     }
   }
