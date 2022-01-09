@@ -93,6 +93,25 @@ export default {
         font-size: 40px;
       }
 
+      .inputs {
+        width: 100%;
+        max-width: 350px;
+
+        .input {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 8px;
+
+          input {
+            width: 100%;
+            border: none;
+            background-color: #f2f7f6;
+          }
+        }
+      }
+
       .forgot-password {
         text-decoration: none;
         color: #000;
