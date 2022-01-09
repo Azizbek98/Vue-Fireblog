@@ -108,6 +108,18 @@ export default {
             width: 100%;
             border: none;
             background-color: #f2f7f6;
+            padding: 4px 4px 4px 30px;
+            height: 50px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .icon {
+            width: 12px;
+            position: absolute;
+            left: 6px;
           }
         }
       }
