@@ -86,6 +86,18 @@ export default {
     h2 {
       text-align: center;
       font-style: 32px;
+      color: #303030;
+      margin-bottom: 40px;
+
+      @media (min-width: 900px) {
+        font-size: 40px;
+      }
+
+      .forgot-password {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+      }
     }
   }
 }
