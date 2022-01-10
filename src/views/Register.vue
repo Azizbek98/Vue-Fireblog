@@ -49,7 +49,22 @@ export default {
     Password,
     User,
   },
+  data() {
+    return {
+      firstName: null,
+      lastName: null,
+      username: null,
+      email: null,
+      password: null,
+    };
+  },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.register {
+  h2 {
+    max-width: 350px;
+  }
+}
+</style>
