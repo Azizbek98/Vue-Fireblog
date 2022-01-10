@@ -1,5 +1,6 @@
 <template>
   <div class="reset-password">
+    <Modal />
     <div class="form-wrap">
       <form class="reset">
         <h2>Reset Password</h2>
@@ -19,12 +20,21 @@
 </template>
 
 <script>
+import Modal from "../components/Modal";
 import Email from "../assets/Icons/envelope-regular.svg";
 
 export default {
   name: "ForgotPassword",
   components: {
+    Modal,
     Email,
+  },
+  data() {
+    return {
+      email: null,
+      modalActive: null,
+      modalMessage: "",
+    };
   },
 };
 </script>
