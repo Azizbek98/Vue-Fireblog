@@ -10,7 +10,10 @@
             <Email class="icon" />
           </div>
         </div>
+        <button>Reset</button>
+        <div class="angle"></div>
       </form>
+      <div class="background"></div>
     </div>
   </div>
 </template>
@@ -26,4 +29,17 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.reset-password {
+  position: relative;
+
+  .form-wrap {
+    h2 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+  }
+}
+</style>
